@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.calc_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    top: 3vh;
+    width: 300px;
+    background-color: rgb(58, 55, 55);
+    padding: 15px 10px;
+    font-family: 'Fjalla One', sans-serif;
+    border-radius: 15px;
+}
+
+.calc_container .screen{
+    position: relative;
+    height: 80px;
+    background-color: lightslategray;
+    display: block;
+    border-radius: 10px;
+}
+.calc_container .screen > div{
+    height: 50%;
+    text-align: right;
+    font-size: 25px;
+    color: #fff;
+    padding: 3px 15px 3px 15px;
+}
+.calc_container .button_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.calc_container .button_container .range{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: row;
+    width: 100%;
+    padding: 15px 0px;
+}
+.calc_container .button_container .range > div{
+    width: 70px;
+    text-align: center;
+    height: 70px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 3px;
+    border: 2px solid rgba(27, 26, 26, 0.75);
+    box-shadow: inset 2px 2px rgba(27, 26, 26, 0.75);
+}
